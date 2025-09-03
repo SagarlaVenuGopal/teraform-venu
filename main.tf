@@ -77,7 +77,7 @@ resource "aws_instance" "web" {
   subnet_id              = aws_subnet.public.id
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
 
-  tags = { Name = "web-server" }
+  tags = { Name = "w-server" }
 }
 
 # S3 Bucket (without ACLs, as AWS blocks them now)
